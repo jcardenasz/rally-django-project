@@ -1,42 +1,130 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; /* Allows scrolling */
+}
+
+/* Navbar */
+nav {
+  background-color: #2d2d2d;
+  padding: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center navbar items */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  color: #facc15; /* Yellow */
+}
+
+/* Main Layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: auto;
+  overflow-scrolling: auto !important;
+}
+
+/* Dashboard Grid */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Responsive Grid */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Cards */
+section {
+  background-color: #242424;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease-in-out;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+section:hover {
+  transform: translateY(-5px);
 }
 
-@keyframes logo-spin {
+/* Toast Notification */
+.toast-container {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  max-width: 350px;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+  max-height: 400px; /* Restrict maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.toast-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.toast-close {
+  margin-top: 10px;
+  background-color: #facc15;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toast-close:hover {
+  background-color: #eab308; /* Darker Yellow */
+}
+
+/* Toast Animation */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(10px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
