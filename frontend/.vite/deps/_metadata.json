@@ -2,7 +2,39 @@
   "hash": "6cb8a2f4",
   "configHash": "12d36a04",
   "lockfileHash": "8d0d3e87",
-  "browserHash": "b042b64b",
-  "optimized": {},
-  "chunks": {}
+  "browserHash": "8e0c767e",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "6e675da7",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "ab6d7588",
+      "needsInterop": true
+    },
+    "react-icons/fa": {
+      "src": "../../node_modules/react-icons/fa/index.mjs",
+      "file": "react-icons_fa.js",
+      "fileHash": "2b50bc86",
+      "needsInterop": false
+    },
+    "@radix-ui/react-toast": {
+      "src": "../../node_modules/@radix-ui/react-toast/dist/index.mjs",
+      "file": "@radix-ui_react-toast.js",
+      "fileHash": "b31921da",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-SY4HHCYH": {
+      "file": "chunk-SY4HHCYH.js"
+    },
+    "chunk-GT27OAPC": {
+      "file": "chunk-GT27OAPC.js"
+    }
+  }
 }
