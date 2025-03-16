@@ -17,6 +17,7 @@ Technologies and software:
 ______________________
 
 Data model:
+
 ![datamodel_Rallt-project.png](documents/datamodel_Rallt-project.png)
 
 _____
