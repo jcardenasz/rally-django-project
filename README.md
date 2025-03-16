@@ -23,4 +23,5 @@ Data model:
 _____
 
 [Juan Camilo Cárdenas Zabala](https://www.linkedin.com/in/juan-camilo-c%C3%A1rdenas-zabala-5aa65b309/)
-Software Developer
+-
+Software Developer - 2025
