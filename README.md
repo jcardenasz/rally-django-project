@@ -17,9 +17,11 @@ Technologies and software:
 ______________________
 
 Data model:
+
 ![datamodel_Rallt-project.png](documents/datamodel_Rallt-project.png)
 
 _____
 
 [Juan Camilo Cárdenas Zabala](https://www.linkedin.com/in/juan-camilo-c%C3%A1rdenas-zabala-5aa65b309/)
-Software Developer
+-
+Software Developer - 2025
